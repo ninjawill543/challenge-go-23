@@ -13,11 +13,12 @@ func PrintComb() {
 				z01.PrintRune(a)
 				z01.PrintRune(b)
 				z01.PrintRune(c)
+				if c == '9' && b == '8' && a == '7' {
+					z01.PrintRune('\n')
+					goto Exit
+				}
 				z01.PrintRune(44)
 				z01.PrintRune(32)
-			}
-			if c == '9' && b == '8' && a == '7' {
-				goto Exit
 			}
 			b++
 			c = 0
@@ -41,11 +42,12 @@ func PrintComb() {
 			z01.PrintRune(a)
 			z01.PrintRune(b)
 			z01.PrintRune(c)
-			z01.PrintRune(44)
-			z01.PrintRune(32)
 			if c == '9' && b == '8' && a == '7' {
+				z01.PrintRune('\n')
 				goto Exit
 			}
+			z01.PrintRune(44)
+			z01.PrintRune(32)
 		}
 	}
 Exit:
