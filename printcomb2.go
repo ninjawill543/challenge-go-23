@@ -23,7 +23,7 @@ func PrintComb2() {
 				c++
 			}
 			d++
-			if d > b && c > a {
+			if d > b && c >= a {
 				z01.PrintRune(a)
 				z01.PrintRune(b)
 				z01.PrintRune(' ')
