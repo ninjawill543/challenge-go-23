@@ -3,43 +3,29 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintComb2() {
-	a := '0'
-	b := '0'
-	c := '0'
-	d := '0'
-	for i := 0; i <= 99; i++ {
-		for j := 0; j <= 99; j++ {
-			if d == '9' {
-				if d > b && c >= a {
-					z01.PrintRune(a)
-					z01.PrintRune(b)
-					z01.PrintRune(' ')
-					z01.PrintRune(c)
-					z01.PrintRune(d)
-					z01.PrintRune(',')
-					z01.PrintRune(' ')
+	for i := '0'; i <= '9'; i++ {
+		for j := '0'; j <= '9'; j++ {
+			for k := '0'; k <= '9'; k++ {
+				for l := '0'; l <= '9'; l++ {
+					if string(i)+string(j) < string(k)+string(l) {
+						if i == '9' && j == '8' && k == '9' && l == '9' {
+							z01.PrintRune(rune(i))
+							z01.PrintRune(rune(j))
+							z01.PrintRune(' ')
+							z01.PrintRune(rune(k))
+							z01.PrintRune(rune(l))
+							z01.PrintRune('\n')
+						} else {
+							z01.PrintRune(rune(i))
+							z01.PrintRune(rune(j))
+							z01.PrintRune(' ')
+							z01.PrintRune(rune(k))
+							z01.PrintRune(rune(l))
+							z01.PrintRune(',')
+							z01.PrintRune(' ')
+						}
+					}
 				}
-				d = '0'
-				c++
-			}
-			d++
-			if d > b && c > a {
-				z01.PrintRune(a)
-				z01.PrintRune(b)
-				z01.PrintRune(' ')
-				z01.PrintRune(c)
-				z01.PrintRune(d)
-				z01.PrintRune(',')
-				z01.PrintRune(' ')
-			}
-			if d == '9' && c == '9' {
-				b++
-				d = '0'
-				c = '0'
-			}
-			if b == '9' {
-				b = '0'
-				a++
 			}
 		}
 	}
