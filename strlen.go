@@ -1,5 +1,11 @@
 package piscine
 
 func StrLen(s string) int {
-	return len(s)
+	cpt := 0
+	liste := []rune{}
+	for _, lettre := range s {
+		liste = append(liste, lettre)
+		cpt++
+	}
+	return cpt
 }
