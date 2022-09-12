@@ -7,8 +7,6 @@ func Sqrt(nb int) int {
 			resultat = i
 		} else if nb == 1 {
 			return 1
-		} else {
-			return 0
 		}
 	}
 
