@@ -8,8 +8,6 @@ func IterativeFactorial(nb int) int {
 		} else {
 			result = 0
 		}
-		goto Exit
 	}
-Exit:
 	return result
 }
