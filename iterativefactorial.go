@@ -5,9 +5,11 @@ func IterativeFactorial(nb int) int {
 	for i := 1; i <= nb; i++ {
 		if nb > 0 && nb < 10 {
 			result = result * i
-		} else {
-			return 0
 		}
 	}
-	return result
+	if nb > 0 && nb < 10 {
+		return result
+	} else {
+		return 0
+	}
 }
