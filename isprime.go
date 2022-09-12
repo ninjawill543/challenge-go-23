@@ -6,5 +6,9 @@ func IsPrime(nb int) bool {
 			return false
 		}
 	}
-	return true
+	if nb > 0 {
+		return true
+	} else {
+		return false
+	}
 }
