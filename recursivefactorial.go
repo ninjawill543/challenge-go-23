@@ -7,9 +7,7 @@ func RecursiveFactorial(nb int) int {
 	if nb > 1 && nb != 0 {
 		return nb * RecursiveFactorial(nb-1)
 	}
-	if nb == 0 {
-		goto Exit
-	}
+	goto Exit
 Exit:
 	return 0
 }
