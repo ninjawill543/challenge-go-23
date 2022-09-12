@@ -7,6 +7,9 @@ func IterativeFactorial(nb int) int {
 			result = result * i
 		}
 		goto Exit
+	} else if nb == 0 {
+		result = 1
+		goto Exit
 	} else {
 		result = 0
 		goto Exit
