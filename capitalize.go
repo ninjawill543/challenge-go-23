@@ -17,10 +17,12 @@ func Capitalize(s string) string {
 		}
 		if c >= 32 && c <= 64 || c >= 91 && c <= 127 {
 			count += string(c)
+			counter++
 		}
 		if c >= 65 && c <= 90 {
 			numb := c + 32
 			count += (string(numb))
+			counter++
 		}
 		if c == 32 {
 			counter = 0
