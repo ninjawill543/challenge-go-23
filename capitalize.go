@@ -24,7 +24,7 @@ func Capitalize(s string) string {
 			count += (string(numb))
 			counter++
 		}
-		if c == 32 || c < 32 || c > 127 {
+		if c < 48 || c > 57 && c < 65 || c > 90 && c < 97 || c > 122 {
 			counter = 0
 			count += string(c)
 		}
