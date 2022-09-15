@@ -13,7 +13,5 @@ func Index(s string, toFind string) int {
 			counter++
 		}
 	}
-
 	return counter
-
 }
