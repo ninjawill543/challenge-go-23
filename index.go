@@ -8,7 +8,7 @@ func Index(s string, toFind string) int {
 		for i := 0; i < len(s); i++ {
 			for j := 0; j < len(toFind); j++ {
 				if s[i] == toFind[j] {
-					if len(toFind) == 0 {
+					if len(toFind) == 1 {
 						return i
 					} else {
 						var mot string
