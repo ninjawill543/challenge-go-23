@@ -8,5 +8,4 @@ func AlphaCount(s string) int {
 		}
 	}
 	return (len(count))
-
 }
