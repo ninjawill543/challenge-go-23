@@ -7,8 +7,6 @@ func MakeRange(min, max int) []int {
 		for i := min; i < max; i++ {
 			list[i-min] = i + 1
 		}
-	} else {
-		list = nil
 	}
 	return list
 }
