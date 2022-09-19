@@ -7,7 +7,7 @@ func AppendRange(min, max int) []int {
 			list = append(list, i)
 		}
 	} else {
-		list = append(list)
+		list = nil
 	}
 	return list
 }
