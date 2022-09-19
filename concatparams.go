@@ -6,7 +6,7 @@ func ConcatParams(args []string) string {
 	for _, i := range args {
 		counter++
 		list = list + i
-		if counter == len(args)-1 {
+		if counter == len(args) {
 			return list
 		}
 		list = list + "\n"
