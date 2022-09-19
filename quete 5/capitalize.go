@@ -2,9 +2,6 @@ package piscine
 
 func Capitalize(s string) string {
 	counter := 0
-	//const A_low =
-	//const A_high =
-	//const
 	var count string
 	for _, c := range s {
 		if counter == 0 {
@@ -31,7 +28,6 @@ func Capitalize(s string) string {
 			counter = 0
 			count += string(c)
 		}
-
 	}
 	return count
 }
