@@ -1,6 +1,6 @@
 package piscine
 
-func MakeRange(min, max int) []int {
+func MakeRange(min int, max int) []int {
 	list := []int(nil)
 	if min < max {
 		list := make([]int, (max - min))
