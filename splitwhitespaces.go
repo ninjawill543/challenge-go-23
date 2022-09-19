@@ -7,8 +7,10 @@ func SplitWhiteSpaces(s string) []string {
 		if i != 9 && i != 32 && i != 10 {
 			hold = hold + string(i)
 		} else {
-			list = append(list, hold)
-			hold = ""
+			if hold != "" {
+				list = append(list, hold)
+				hold = ""
+			}
 		}
 	}
 	list = append(list, hold)
