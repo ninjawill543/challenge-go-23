@@ -20,6 +20,7 @@ func even(nbr int) int {
 		return 0
 	}
 }
+
 func isEven(nbr int) int {
 	if even(nbr) == 1 {
 		return 1
