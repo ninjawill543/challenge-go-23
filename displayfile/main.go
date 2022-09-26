@@ -10,7 +10,7 @@ func main() {
 	file := os.Args[1]
 	content, err := ioutil.ReadFile(file)
 	if err != nil {
-		fmt.Println("file not found")
+		fmt.Println("File name missing")
 	}
 
 	fmt.Println(string(content))
