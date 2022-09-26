@@ -13,7 +13,8 @@ func main() {
 			fmt.Printf("File name missing")
 			fmt.Printf("\n")
 		}
-		fmt.Println(string(content))
+		fmt.Printf(string(content))
+		fmt.Printf("\n")
 	} else {
 		fmt.Printf("File name missing")
 		fmt.Printf("\n")
