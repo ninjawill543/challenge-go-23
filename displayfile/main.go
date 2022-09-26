@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	if len(os.Args) > 1 {
 		content, err := ioutil.ReadFile(os.Args[1])
 		if err != nil {
