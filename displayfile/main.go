@@ -7,8 +7,7 @@ import (
 )
 
 func main() {
-	file := os.Args[1]
-	content, err := ioutil.ReadFile(file)
+	content, err := ioutil.ReadFile(os.Args[1])
 	if err != nil {
 		fmt.Println("File name missing")
 	}
