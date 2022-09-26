@@ -14,7 +14,6 @@ func main() {
 			fmt.Printf("\n")
 		}
 		fmt.Printf(string(content))
-		fmt.Printf("\n")
 	} else {
 		fmt.Printf("File name missing")
 		fmt.Printf("\n")
