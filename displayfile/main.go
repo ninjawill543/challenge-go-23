@@ -11,9 +11,11 @@ func main() {
 		content, err := ioutil.ReadFile(os.Args[1])
 		if err != nil {
 			fmt.Printf("File name missing")
+			fmt.Printf("\n")
 		}
 		fmt.Println(string(content))
 	} else {
 		fmt.Printf("File name missing")
+		fmt.Printf("\n")
 	}
 }
