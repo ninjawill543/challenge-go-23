@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	"log"
 	"os"
 )
 
@@ -11,7 +10,7 @@ func main() {
 	file := os.Args[1]
 	content, err := ioutil.ReadFile(file)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("file not found")
 	}
 
 	fmt.Println(string(content))
