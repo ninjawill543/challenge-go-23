@@ -20,7 +20,7 @@ func main() {
 				for _, a := range open {
 					z01.PrintRune(a)
 				}
-				for _, b := range os.Args[2] {
+				for _, b := range os.Args[1] {
 					z01.PrintRune(b)
 				}
 				for _, c := range no {
@@ -35,12 +35,12 @@ func main() {
 				z01.PrintRune(g)
 			}
 		} else if len(os.Args) > 2 {
-			content, err := ioutil.ReadFile(os.Args[i])
+			content, err := ioutil.ReadFile(os.Args[i-1])
 			if err != nil {
 				for _, e := range er {
 					z01.PrintRune(e)
 				}
-				for _, f := range os.Args[i] {
+				for _, f := range os.Args[i-1] {
 					z01.PrintRune(f)
 				}
 				for _, g := range Nop {
