@@ -13,9 +13,9 @@ func main() {
 	er := "ERROR: "
 	Nop := ": No such file or directory"
 	exit := "exit status 1"
-	for i := 1; i <= len(os.Args); i++ {
+	for i := 1; i < len(os.Args); i++ {
 		if len(os.Args) == 2 {
-			content, err := ioutil.ReadFile(os.Args[2])
+			content, err := ioutil.ReadFile(os.Args[1])
 			if err != nil {
 				for _, a := range open {
 					z01.PrintRune(a)
