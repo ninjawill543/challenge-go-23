@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -16,21 +17,39 @@ func main() {
 		if len(os.Args) == 2 {
 			content, err := ioutil.ReadFile(os.Args[2])
 			if err != nil {
-				fmt.Printf(open)
-				fmt.Printf(os.Args[2])
-				fmt.Printf(no)
-				fmt.Printf("\n")
-				fmt.Print(exit)
+				for _, a := range open {
+					z01.PrintRune(a)
+				}
+				for _, b := range os.Args[2] {
+					z01.PrintRune(b)
+				}
+				for _, c := range no {
+					z01.PrintRune(c)
+				}
+				z01.PrintRune('\n')
+				for _, d := range exit {
+					z01.PrintRune(d)
+				}
 			}
-			fmt.Printf(string(content))
+			for _, g := range string(content) {
+				z01.PrintRune(g)
+			}
 		} else if len(os.Args) > 2 {
 			content, err := ioutil.ReadFile(os.Args[i])
 			if err != nil {
-				fmt.Printf(er)
-				fmt.Printf(os.Args[i])
-				fmt.Printf(Nop)
+				for _, e := range er {
+					z01.PrintRune(e)
+				}
+				for _, f := range os.Args[i] {
+					z01.PrintRune(f)
+				}
+				for _, g := range Nop {
+					z01.PrintRune(g)
+				}
 			}
-			fmt.Printf(string(content))
+			for _, h := range string(content) {
+				z01.PrintRune(h)
+			}
 		}
 	}
 }
