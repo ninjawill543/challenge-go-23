@@ -1,12 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"piscine"
-)
-
-func main() {
-	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces("y?]gM<d}6w3:f poU/+fpE-:W!J e#7%:d/MejeR  ^WIv{KoxF2zv= |5a/$ U]y{+Kz \\\"~j-1WasF3O% f|QGxFb<+!Xo0 33I`<|/+PdJFt"))
+func f(a, b int) int {
+	if a > b {
+		return 1
+	} else if a == b {
+		return 0
+	}
+	return -1
 }
-
-// []string{"y?]gM<d}6w3:f", "poU/+fpE-:W!J", "e#7%:d/MejeR", "^WIv{KoxF2zv=", "|5a/$", "U]y{+Kz", "\\\"~j-1WasF3O%", "f|QGxFb<+!Xo0", "33I`<|/+PdJFt"}
